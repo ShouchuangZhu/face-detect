@@ -2,16 +2,31 @@ import React, { Component } from 'react';
 import Navigation from './Comps/Navigation'
 import Logo from './Comps/Logo'
 import ImageLinkForm from './Comps/ImageLinkForm'
-
+import Rank from './Comps/Rank/Rank'
+import Particles from 'react-particles-js';
 import './App.css';
 import 'tachyons';
 
+const particlesIn = {
+  Particles:{
+      number: {
+        value: 30,
+        density: {
+          enable: true,
+          value_area: 800
+        }
+      }
+    }         
+}
 class App extends Component {
   render() {
     return (
       <div className="App">
+      <Particles className='particles'
+          params={{particlesIn}} />
         <Navigation />
         <Logo />
+        <Rank />
         <ImageLinkForm />
        {/*   
         
