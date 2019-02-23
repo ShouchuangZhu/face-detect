@@ -33,8 +33,9 @@ class App extends Component {
       imageUrl: '',
     }
   }
-  onInputChngae = (event) =>{
-    this.setState({input: event.target.value}); 
+  
+  onInputChange = (event) =>{
+   this.setState({input: event.target.value}); 
   }
 
   onSubmit=()=>{
@@ -48,8 +49,8 @@ class App extends Component {
       // there was an error
     }
   );
-
-  }
+  } 
+  
   render() {
     return (
       <div className='App'>
@@ -58,7 +59,7 @@ class App extends Component {
         <Navigation />
         <Logo />
         <Rank />
-        <ImageLinkForm onInputChngae={this.onInputChange} onSubmit={this.onSubmit} />
+        <ImageLinkForm onInputChange={this.onInputChange}  onSubmit={this.onSubmit}  />
       
        <FaceRecognition imageUrl={this.state.imageUrl}/> 
       </div>
