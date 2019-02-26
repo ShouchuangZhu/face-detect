@@ -1,3 +1,3 @@
-Using NPM install 
-NPM install tachyon
-NPM install Clarifai
+Using NPM install; 
+NPM install tachyon;
+NPM install Clarifai;
